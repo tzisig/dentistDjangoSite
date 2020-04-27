@@ -17,8 +17,8 @@
                 <p data-animation="fadeInUp" data-delay="300ms">As a leading industry innovator, Dento is opening up exciting new opportunities for dental professionals, investors, employees & suppliers. Contact us to find out what we have to
                   offer you.</p>
                 <div class="welcome-btn-group">
-                  <a href="#" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>
-                  <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Us</a>
+                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>
+                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Us</a>
                 </div>
               </div>
             </div>
@@ -311,7 +311,7 @@
 
         <div class="col-12">
           <div class="more-btn text-center mt-50">
-            <a href="#" class="btn dento-btn">Read More <i class="fa fa-angle-double-right"></i></a>
+            <a href="{% url 'pricing' %}" class="btn dento-btn">Read More <i class="fa fa-angle-double-right"></i></a>
           </div>
         </div>
       </div>
@@ -401,7 +401,7 @@
   <!-- Book An Oppointment Area End -->
 
   <!-- ***** Dento Dentist Area Start ***** -->
-  <section class="dentist-area section-padding-100-0">
+  <section class="dentist-area section-padding-100-0" style="margin-bottom: 2em;">
     <div class="container">
       <div class="row">
         <!-- Section Heading -->
@@ -556,12 +556,12 @@
         <!-- Single Blog Item -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="single-blog-item mb-100">
-            <a href="./blog-details.html">
+            <a href="{% url 'blog_details' &}">
               <img src="{% static 'img/bg-img/4.jpg' %}" alt="">
             </a>
             <!-- Blog Content -->
             <div class="blog-content">
-              <a href="./blog-details.html" class="post-title">How your mouth bacteria can harm your lungs</a>
+              <a href="{% url 'blog_details' &}" class="post-title">How your mouth bacteria can harm your lungs</a>
               <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
               <div class="post-meta">
                 <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
