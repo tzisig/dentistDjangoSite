@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Appointment page title {% endblock %}
+{% block meta_description %} description for Appointment page go here {% endblock %} 
+{% block content %}
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Appointment</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Your Appointment Details</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+<div class="container" style="margin-bottom: 30px;">
+    <div class="row">
+        <div class="col-md">
+        </div>
+        <div class="col-md text-right" style="font-weight: 500;">
+            Name:
+        </div>
+        <div class="col-md">
+            {{your_name}}
+        </div>
+        <div class="col-md">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+        </div>
+        <div class="col-md text-right" style="font-weight: 500;">
+            Phone:
+        </div>
+        <div class="col-md">
+            {{your_phone}}
+        </div>
+        <div class="col-md">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+        </div>
+        <div class="col-md text-right" style="font-weight: 500;">
+            Email:
+        </div>
+        <div class="col-md">
+            {{your_email}}
+        </div>
+        <div class="col-md">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+        </div>
+        <div class="col-md text-right" style="font-weight: 500;">
+            Address:
+        </div>
+        <div class="col-md">
+            {{your_address}}
+        </div>
+        <div class="col-md">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+        </div>
+        <div class="col-md text-right" style="font-weight: 500;">
+            Your Day:
+        </div>
+        <div class="col-md">
+            {{your_day}}
+        </div>
+        <div class="col-md">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+        </div>
+        <div class="col-md text-right" style="font-weight: 500;">
+            Time:
+        </div>
+        <div class="col-md">
+            {{your_time}}
+        </div>
+        <div class="col-md">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+        </div>
+        <div class="col-md text-right" style="font-weight: 500;">
+            Message:
+        </div>
+        <div class="col-md">
+            {{your_message}}
+        </div>
+        <div class="col-md">
+        </div>
+    </div>
+</div>
+<div class="text-center" style="margin-bottom: 50px; font-weight: 900; font-size: 1.3em; color: red;">We will contact you shortly to confirm your appointment</div> 
+
+
+{% endblock %}
